@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #9156E0, #FF9867);
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color:#EAEDFF;
+  }
+  
+  .calculator-grid > button:hover {
+    background-color: #F2E1FD;
+  }
+  
+  .double-size-button {
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1 / -1;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  .output .previous-value {
+    color: #7A8591;
+    font-size: 1.5rem;
+  }
+  
+  .output .current-value {
+    color:#000000;
+    font-size: 2.5rem;
+  }
+
+  .calculator-grid > button.divide{
+   background: #F7D062;
+   color: #FFFFFF;
+  }
+  .calculator-grid > button.multiply{
+    background: #F9C863;
+    color: #FFFFFF;
+  }
+  .calculator-grid > button.plus{
+    background: #FFA965;
+    color: #FFFFFF;
+  }
+  .calculator-grid > button.minus{
+    background: #FEB864;
+    color: #FFFFFF;
+  }
+  .calculator-grid > button.equal{
+    background: #FFA266;
+    color: #FFFFFF;
+  }
+
+
+  .calculator-grid > button.divide:hover{
+    background-color: #FF9669;
+  }
+  .calculator-grid > button.multiply:hover{
+    background-color: #FF9669;
+  }
+  .calculator-grid > button.minus:hover{
+    background-color: #FF9669;
+  }
+  .calculator-grid > button.plus:hover{
+    background-color: #FF9669;
+  }
+  .calculator-grid > button.equal:hover{
+    background-color: #FF9669;
+  }
